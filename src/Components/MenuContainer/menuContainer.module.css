@@ -1,0 +1,44 @@
+:root {
+    /*--bgc: #eaafc8;*/
+    --bgc: #efefff;
+}
+.menuContainer {
+    max-width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+}
+.menuContent {
+    overflow: hidden;
+    border-radius: 10px;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: var(--bgc);
+}
+.card {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.triangle {
+    --width: 16px;
+    position: absolute;
+    top: calc(var(--width) / 2 * -1);
+    width: var(--width);
+    aspect-ratio: 1 / 1;
+    background: var(--bgc);
+    rotate: 45deg;
+    z-index: -1;
+    border-top-left-radius: .25em;
+    transition: .2s;
+}

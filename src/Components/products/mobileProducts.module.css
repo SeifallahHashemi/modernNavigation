@@ -1,0 +1,52 @@
+.mobileCard {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    color: #88add2;
+}
+.mobileLists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 3rem;
+}
+.mobileLists > li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+.icon {
+    display: grid;
+    place-content: center;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    background: #654ea3;
+    border-radius: 1.5rem;
+}
+.icon svg{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.mobileFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.mobileFooter ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+.mobileFooter ul li {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}

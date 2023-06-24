@@ -1,0 +1,77 @@
+.centered {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.25rem;
+}
+.digitalCard {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    color: #88add2;
+}
+.digitalLists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-auto-rows: 2rem;
+    grid-auto-flow: dense;
+    grid-gap: 2rem;
+    padding: 3rem;
+}
+.span2 {
+    grid-row: span 2;
+}
+.span3 {
+    grid-row: span 3;
+}
+.span4 {
+    grid-row: span 4;
+    /*background: red;*/
+}
+.digitalLists > li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.digitalLists__indent {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    font-size: .9em;
+    color: #afafaf;
+    gap: 0.5rem;
+}
+.icon {
+    display: grid;
+    place-content: center;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    background: #654ea3;
+    border-radius: 1.5rem;
+}
+.icon svg{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.digitalFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.digitalFooter ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding: 2rem;
+}
+.digitalFooter ul li {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}

@@ -1,0 +1,30 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+}
+.navigation {
+    width: 40vw;
+    height: 100%;
+}
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list__item {
+    cursor: pointer;
+    flex-grow: 1;
+    height: 100%;
+}
+.list__item p {
+    width: 100%;
+    height: 100%;
+}
